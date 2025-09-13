@@ -197,6 +197,44 @@
             margin-top: 1rem;
         }
 
+        /* 底部版权信息 */
+        .resume-footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 0;
+            background: rgba(12, 12, 12, 0.9);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            z-index: 100;
+        }
+
+        .resume-footer .footer-content p {
+            color: #888888;
+            font-size: 0.8rem;
+            margin: 0;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .resume-footer .footer-content p:hover {
+            opacity: 1;
+        }
+
+        .resume-footer .footer-content a {
+            color: #00d4ff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .resume-footer .footer-content a:hover {
+            color: #00b8e6;
+            border-bottom-color: #00b8e6;
+        }
+
         /* 响应式设计 */
         @media (max-width: 768px) {
             .container {
@@ -210,6 +248,11 @@
             
             .icon {
                 font-size: 3rem;
+            }
+
+            .resume-footer .footer-content p {
+                font-size: 0.7rem;
+                padding: 0 1rem;
             }
         }
     </style>
@@ -248,5 +291,12 @@
             <span>返回主页</span>
         </a>
     </div>
+
+    <!-- 底部版权信息 -->
+    <footer class="resume-footer">
+        <div class="footer-content">
+            <p>user-lwl 的代码小窝 ©2025 by <a href="https://github.com/user-lwl" target="_blank" rel="noopener noreferrer">user-lwl</a> | <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">鲁ICP备2024080109号-2</a></p>
+        </div>
+    </footer>
 </body>
 </html>
