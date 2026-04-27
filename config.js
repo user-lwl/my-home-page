@@ -56,6 +56,12 @@ const defaultLinks = [
         description: "开源项目和代码仓库"
     },
     {
+        name: "LeetCode",
+        url: "https://leetcode.cn/u/chi-yan-hong-chen/",
+        icon: "fas fa-code",
+        description: "刷题记录和算法学习"
+    },
+    {
         name: "在线简历",
         url: "resume.html",
         icon: "fas fa-file-alt",
@@ -66,11 +72,19 @@ const defaultLinks = [
 // 实用工具配置
 const projectsConfig = [
     {
+        name: "AI零代码应用生成平台",
+        description: "无需编码即可快速生成AI应用的在线平台",
+        icon: "fas fa-magic",
+        technologies: ["AI", "No-Code", "Platform"],
+        url: "https://ai.user-lwl.cn/",
+        github: ""
+    },
+    {
         name: "AI聊天助手",
         description: "基于AI技术的智能对话平台，支持多种对话模式",
         icon: "fas fa-comments",
         technologies: ["AI", "Chat", "Web"],
-        url: "http://chat.user-lwl.icu",
+        url: "http://chat.user-lwl.cn",
         github: ""
     },
     {
@@ -78,7 +92,7 @@ const projectsConfig = [
         description: "支持自定义密钥的趣味加密解密工具，将文本加密为玛卡巴卡",
         icon: "fas fa-shield-alt",
         technologies: ["Encryption", "Fun", "Custom"],
-        url: "http://bb.user-lwl.icu",
+        url: "http://bb.user-lwl.cn",
         github: ""
     },
     {
@@ -86,7 +100,7 @@ const projectsConfig = [
         description: "智能生成建表语句和模拟数据插入语句的在线工具",
         icon: "fas fa-code",
         technologies: ["SQL", "Generator", "Database"],
-        url: "http://sql.user-lwl.icu",
+        url: "http://sql.user-lwl.cn",
         github: ""
     }
 ];
