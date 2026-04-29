@@ -25,20 +25,21 @@ const personalConfig = {
         "Java",
         "Spring Boot",
         "Spring Cloud Alibaba",
+        "SpringAI",
         "Nacos",
         "Sentinel",
         "MySQL",
         "Redis",
         "Docker",
         "RabbitMQ",
-        "Elasticsearch",
+        "LangChain4j",
         "Linux",
         "Git",
         "Maven"
     ],
     
     // 关于我的内容
-    about: "后端开发工程师一枚，Java是主要开发语言。熟悉Spring Boot等多种框架，对MySQL数据库设计和Redis缓存有一定经验。了解微服务架构，参与过系统设计相关工作。平时喜欢逛逛GitHub，看看别人家的代码，顺便学点新东西。目标是写出更优雅的代码，少加点班 😄"
+    about: "后端开发工程师一枚，Java是主要开发语言。熟悉Spring Boot等多种框架，对MySQL数据库设计和Redis缓存有一定经验。熟练掌握AI应用开发，包括LangChain4j等技术栈。了解微服务架构，参与过系统设计相关工作。平时喜欢逛逛GitHub，看看别人家的代码，顺便学点新东西。目标是写出更优雅的代码，少加点班 😄"
 };
 
 // 默认链接配置
@@ -73,9 +74,9 @@ const defaultLinks = [
 const projectsConfig = [
     {
         name: "AI零代码应用生成平台",
-        description: "无需编码即可快速生成AI应用的在线平台",
+        description: "基于LangChain4j，一句话快速生成AI应用的在线平台",
         icon: "fas fa-magic",
-        technologies: ["AI", "No-Code", "Platform"],
+        technologies: ["AI", "LangChain4j", "No-Code"],
         url: "https://ai.user-lwl.cn/",
         github: ""
     },
