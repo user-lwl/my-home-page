@@ -62,12 +62,12 @@ const defaultLinks = [
         icon: "fas fa-code",
         description: "刷题记录和算法学习"
     },
-    {
-        name: "在线简历",
-        url: "resume.html",
-        icon: "fas fa-file-alt",
-        description: "查看我的详细简历"
-    }
+    // {
+    //     name: "在线简历",
+    //     url: "resume.html",
+    //     icon: "fas fa-file-alt",
+    //     description: "查看我的详细简历"
+    // }
 ];
 
 // 实用工具配置
@@ -102,6 +102,14 @@ const projectsConfig = [
         icon: "fas fa-code",
         technologies: ["SQL", "Generator", "Database"],
         url: "http://sql.user-lwl.cn",
+        github: ""
+    },
+    {
+        name: "Oracle管理工具",
+        description: "Oracle数据库管理工具，支持数据查询和管理操作",
+        icon: "fas fa-database",
+        technologies: ["Oracle", "Database", "Tool"],
+        url: "oracle_helper.exe",
         github: ""
     }
 ];
@@ -228,7 +236,17 @@ function loadProjects() {
         if (project.url) {
             projectCard.style.cursor = 'pointer';
             projectCard.addEventListener('click', () => {
-                window.open(project.url, '_blank');
+                // 如果是exe文件，使用download属性下载
+                if (project.url.endsWith('.exe')) {
+                    const a = document.createElement('a');
+                    a.href = project.url;
+                    a.download = project.url.split('/').pop();
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                } else {
+                    window.open(project.url, '_blank');
+                }
             });
         }
         

@@ -80,10 +80,10 @@ function getStoredLinks() {
             description: "开源项目和代码仓库"
         },
         {
-            name: "在线简历",
-            url: "resume.html",
-            icon: "fas fa-file-alt",
-            description: "查看我的详细简历"
+            name: "LeetCode",
+            url: "https://leetcode.cn/u/chi-yan-hong-chen/",
+            icon: "fas fa-code",
+            description: "刷题记录和算法学习"
         }
     ];
 }
